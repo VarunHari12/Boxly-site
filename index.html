@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxly - AI-Powered Productivity Extension</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cube"></i>
+                <span>Boxly</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#installation" class="nav-link">Install</a></li>
+                <li><a href="#download" class="nav-link download-btn">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Stay Focused with</span>
+                    <span class="hero-title-brand">Boxly</span>
+                </h1>
+                <p class="hero-subtitle">AI-powered productivity extension that blocks distracting websites and helps you organize tasks with intelligent task management</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Free
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        See Features
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-task floating-task-1">
+                    <div class="task-content">
+                        <h4>📚 Study Chemistry</h4>
+                        <span class="task-meta">Due: Tomorrow</span>
+                    </div>
+                </div>
+                <div class="floating-task floating-task-2">
+                    <div class="task-content">
+                        <h4>💻 Code Project</h4>
+                        <span class="task-meta">In Progress</span>
+                    </div>
+                </div>
+                <div class="floating-task floating-task-3">
+                    <div class="task-content">
+                        <h4>📝 Write Essay</h4>
+                        <span class="task-meta">2 hours left</span>
+                    </div>
+                </div>
+                <div class="hero-mockup-container">
+                    <div class="hero-mockup-flipper">
+                        <!-- Front side - Free view with floating tasks -->
+                        <div class="hero-mockup-side hero-mockup-front">
+                            <div class="hero-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-buttons">
+                                        <span class="btn-close"></span>
+                                        <span class="btn-minimize"></span>
+                                        <span class="btn-maximize"></span>
+                                    </div>
+                                    <span class="mockup-title">Boxly Extension</span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-tabs">
+                                        <button class="mockup-tab active" data-view="free">Free</button>
+                                        <button class="mockup-tab" data-view="calendar">Calendar</button>
+                                    </div>
+                                    <div class="mockup-board">
+                                        <div class="mockup-add-btn">+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back side - Calendar view -->
+                        <div class="hero-mockup-side hero-mockup-back">
+                            <div class="hero-mockup">
+                                <div class="mockup-header">
+                                    <div class="mockup-buttons">
+                                        <span class="btn-close"></span>
+                                        <span class="btn-minimize"></span>
+                                        <span class="btn-maximize"></span>
+                                    </div>
+                                    <span class="mockup-title">Boxly Extension</span>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mockup-tabs">
+                                        <button class="mockup-tab" data-view="free">Free</button>
+                                        <button class="mockup-tab active" data-view="calendar">Calendar</button>
+                                    </div>
+                                    <div class="mockup-calendar-full">
+                                        <div class="calendar-header">
+                                            <h3>November 2024</h3>
+                                        </div>
+                                        <div class="calendar-grid">
+                                            <div class="calendar-day-header">Mon</div>
+                                            <div class="calendar-day-header">Tue</div>
+                                            <div class="calendar-day-header">Wed</div>
+                                            <div class="calendar-day-header">Thu</div>
+                                            <div class="calendar-day-header">Fri</div>
+                                            <div class="calendar-day-header">Sat</div>
+                                            <div class="calendar-day-header">Sun</div>
+                                            
+                                            <div class="calendar-day"></div>
+                                            <div class="calendar-day"></div>
+                                            <div class="calendar-day"></div>
+                                            <div class="calendar-day calendar-day-number">1</div>
+                                            <div class="calendar-day calendar-day-number">2</div>
+                                            <div class="calendar-day calendar-day-number">3</div>
+                                            <div class="calendar-day calendar-day-number">4</div>
+                                            
+                                            <div class="calendar-day calendar-day-number">5</div>
+                                            <div class="calendar-day calendar-day-number">6</div>
+                                            <div class="calendar-day calendar-day-number">7</div>
+                                            <div class="calendar-day calendar-day-number">8</div>
+                                            <div class="calendar-day calendar-day-number">9</div>
+                                            <div class="calendar-day calendar-day-number">10</div>
+                                            <div class="calendar-day calendar-day-number">11</div>
+                                            
+                                            <div class="calendar-day calendar-day-number">12</div>
+                                            <div class="calendar-day calendar-day-number">13</div>
+                                            <div class="calendar-day calendar-day-number">14</div>
+                                            <div class="calendar-day calendar-day-number has-tasks">15<span class="task-indicator"></span><span class="task-indicator"></span></div>
+                                            <div class="calendar-day calendar-day-number">16</div>
+                                            <div class="calendar-day calendar-day-number today has-tasks">17<span class="task-indicator"></span></div>
+                                            <div class="calendar-day calendar-day-number has-tasks">18<span class="task-indicator"></span><span class="task-indicator"></span><span class="task-indicator"></span></div>
+                                            
+                                            <div class="calendar-day calendar-day-number">19</div>
+                                            <div class="calendar-day calendar-day-number">20</div>
+                                            <div class="calendar-day calendar-day-number">21</div>
+                                            <div class="calendar-day calendar-day-number has-tasks">22<span class="task-indicator"></span></div>
+                                            <div class="calendar-day calendar-day-number">23</div>
+                                            <div class="calendar-day calendar-day-number">24</div>
+                                            <div class="calendar-day calendar-day-number">25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Blocking</h3>
+                    <p>Uses Llama3 7B model to intelligently block distracting websites based on your current task context</p>
+                    <div class="feature-demo ai-demo">
+                        <div class="demo-browser">
+                            <div class="demo-url">youtube.com/watch?v=distracti...</div>
+                            <div class="demo-status blocked">❌ Blocked by AI</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <h3>Smart Task Organization</h3>
+                    <p>Organize tasks with colorful sticky notes that you can drag, edit, and manage with intuitive controls</p>
+                    <div class="feature-demo">
+                        <div class="demo-board">
+                            <div class="demo-note demo-note-blue">Math Homework</div>
+                            <div class="demo-note demo-note-pink">Call Mom</div>
+                            <div class="demo-note demo-note-yellow">Buy Groceries</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Calendar View</h3>
+                    <p>Switch to calendar view to see all your tasks by due date and easily reschedule by dragging</p>
+                    <div class="feature-demo">
+                        <div class="demo-calendar">
+                            <div class="demo-cal-header">November 2024</div>
+                            <div class="demo-cal-grid">
+                                <div class="demo-cal-day">15<span class="demo-task-dot"></span></div>
+                                <div class="demo-cal-day">16</div>
+                                <div class="demo-cal-day active">17<span class="demo-task-dot"></span><span class="demo-task-dot"></span></div>
+                                <div class="demo-cal-day">18</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Break Management</h3>
+                    <p>Automatic break reminders and forced break periods to maintain healthy work patterns</p>
+                    <div class="feature-demo">
+                        <div class="demo-break">
+                            <div class="demo-timer">25:00</div>
+                            <div class="demo-break-text">Take a 5 minute break!</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Class Integration</h3>
+                    <p>Students can join classes and teachers can assign tasks directly through the extension</p>
+                    <div class="feature-demo">
+                        <div class="demo-class">
+                            <div class="demo-class-item">
+                                <span class="class-tag">CS101</span>
+                                <span>Assignment Due</span>
+                            </div>
+                            <div class="demo-class-item">
+                                <span class="class-tag">MATH202</span>
+                                <span>Quiz Tomorrow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Productivity Tracking</h3>
+                    <p>Track completed tasks and monitor your productivity patterns over time</p>
+                    <div class="feature-demo">
+                        <div class="demo-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Tasks Done</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3h</span>
+                                <span class="stat-label">Focus Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How Boxly Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Create Your Tasks</h3>
+                        <p>Add tasks using our intuitive sticky note interface. Set due dates, topics, and estimated completion time.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Start Working</h3>
+                        <p>Click start on any task to activate the AI-powered blocking system and begin your focused work session.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Stay Focused</h3>
+                        <p>Boxly's Llama3 AI analyzes websites you visit and blocks distracting content while allowing relevant resources.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Take Smart Breaks</h3>
+                        <p>Get automatic break reminders to maintain productivity and prevent burnout during long work sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2 class="section-title">Easy Installation</h2>
+            <p class="installation-subtitle">Boxly isn't yet on the Chrome Web Store, but you can easily install it with these steps:</p>
+            
+            <div class="installation-steps">
+                <div class="install-step">
+                    <div class="install-step-content">
+                        <div class="install-step-header">
+                            <span class="install-step-number">1</span>
+                            <h3>Download Boxly</h3>
+                        </div>
+                        <p>Download or clone the Boxly project and unzip it to a convenient location on your computer.</p>
+                    </div>
+                    <div class="install-visual">
+                        <i class="fas fa-download"></i>
+                    </div>
+                </div>
+                
+                <div class="install-step">
+                    <div class="install-step-content">
+                        <div class="install-step-header">
+                            <span class="install-step-number">2</span>
+                            <h3>Open Chrome Extensions</h3>
+                        </div>
+                        <p>Launch Chrome and click the Extensions button in the top-right corner, then select "Manage Extensions".</p>
+                    </div>
+                    <div class="install-visual">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                </div>
+                
+                <div class="install-step">
+                    <div class="install-step-content">
+                        <div class="install-step-header">
+                            <span class="install-step-number">3</span>
+                            <h3>Enable Developer Mode</h3>
+                        </div>
+                        <p>Toggle "Developer Mode" on in the top-right corner of the Extensions page.</p>
+                    </div>
+                    <div class="install-visual">
+                        <div class="toggle-demo">
+                            <span>Developer mode</span>
+                            <div class="toggle active"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="install-step">
+                    <div class="install-step-content">
+                        <div class="install-step-header">
+                            <span class="install-step-number">4</span>
+                            <h3>Load Unpacked Extension</h3>
+                        </div>
+                        <p>Click "Load Unpacked" and navigate to select the Boxly project folder.</p>
+                    </div>
+                    <div class="install-visual">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                </div>
+                
+                <div class="install-step">
+                    <div class="install-step-content">
+                        <div class="install-step-header">
+                            <span class="install-step-number">5</span>
+                            <h3>Start Using Boxly!</h3>
+                        </div>
+                        <p>Enable Boxly and click the extension icon to open your productivity dashboard.</p>
+                    </div>
+                    <div class="install-visual success">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Ready to Boost Your Productivity?</h2>
+            <p class="download-subtitle">Download Boxly now and start your journey to focused, productive work sessions.</p>
+            
+            <div class="download-options">
+                <div class="download-card primary">
+                    <h3>Download from GitHub</h3>
+                    <p>Get the latest version directly from our repository</p>
+                    <a href="https://github.com/VarunHari12/Boxly/archive/refs/heads/main.zip" class="btn btn-download" id="github-download">
+                        <i class="fab fa-github"></i>
+                        Download ZIP
+                    </a>
+                </div>
+                
+                <div class="download-card">
+                    <h3>Clone Repository</h3>
+                    <p>For developers who want to contribute or modify</p>
+                    <div class="code-snippet">
+                        <code>git clone https://github.com/your-repo/boxly.git</code>
+                        <button class="copy-btn" onclick="copyToClipboard('git clone https://github.com/your-repo/boxly.git')">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="requirements">
+                <h4>System Requirements</h4>
+                <ul>
+                    <li><i class="fab fa-chrome"></i> Google Chrome Browser</li>
+                    <li><i class="fas fa-cogs"></i> Developer Mode Access</li>
+                    <li><i class="fas fa-memory"></i> Minimal RAM Usage (~50MB)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cube"></i>
+                        <span>Boxly</span>
+                    </div>
+                    <p>AI-powered productivity extension for focused work sessions</p>
+                    <div class="footer-stats">
+                        <span class="stat">🧠 Powered by Llama3 7B</span>
+                        <span class="stat">⚡ Lightweight & Fast</span>
+                        <span class="stat">🔒 Privacy-Focused</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#features">AI Website Blocking</a></li>
+                        <li><a href="#features">Task Management</a></li>
+                        <li><a href="#features">Calendar View</a></li>
+                        <li><a href="#features">Break Timer</a></li>
+                        <li><a href="#features">Class Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#installation">Installation Guide</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                    <p class="version">Version 1.0.1</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Boxly. Built with ❤️ for productivity enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
