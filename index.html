@@ -30,10 +30,11 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="hero-title-main">Stay Focused with</span>
+                    <span class="hero-title-main">Stop Getting Distracted.</span>
+                    <span class="hero-title-main-2">Start Getting Things Done.</span>
                     <span class="hero-title-brand">Boxly</span>
                 </h1>
-                <p class="hero-subtitle">AI-powered productivity extension that blocks distracting websites and helps you organize tasks with intelligent task management</p>
+                <p class="hero-subtitle">The only productivity tool that combines <strong>Llama3 AI-powered</strong> distraction blocking with visual task management, Pomodoro timers, and Canvas LMS integration—all synced across your devices in real-time.</p>
                 <div class="hero-buttons">
                     <a href="#download" class="btn btn-primary">
                         <i class="fas fa-download"></i>
@@ -159,6 +160,62 @@
         </div>
     </section>
 
+    <!-- Why Boxly Section -->
+    <section class="why-boxly">
+        <div class="container">
+            <h2 class="section-title">Why Boxly Beats the Rest</h2>
+            <p class="why-subtitle">Most tools do one thing. Boxly does everything.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="competitor-header">
+                        <h3>🚫 Freedom.to / Cold Turkey</h3>
+                        <span class="competitor-label">Website Blockers</span>
+                    </div>
+                    <div class="comparison-content">
+                        <div class="con-item">❌ Dumb blacklists (block everything or nothing)</div>
+                        <div class="con-item">❌ No task management</div>
+                        <div class="con-item">❌ Can't understand context</div>
+                        <div class="pro-item">✅ Boxly: AI decides based on your active task</div>
+                    </div>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="competitor-header">
+                        <h3>📋 Todoist / Trello</h3>
+                        <span class="competitor-label">Task Managers</span>
+                    </div>
+                    <div class="comparison-content">
+                        <div class="con-item">❌ No distraction blocking</div>
+                        <div class="con-item">❌ No built-in Pomodoro</div>
+                        <div class="con-item">❌ You still get distracted while working</div>
+                        <div class="pro-item">✅ Boxly: Tasks + blocking in one tool</div>
+                    </div>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="competitor-header">
+                        <h3>🌳 Forest / Pomodoro Apps</h3>
+                        <span class="competitor-label">Focus Timers</span>
+                    </div>
+                    <div class="comparison-content">
+                        <div class="con-item">❌ Only timers, no blocking</div>
+                        <div class="con-item">❌ No task organization</div>
+                        <div class="con-item">❌ Doesn't prevent you from opening Twitter</div>
+                        <div class="pro-item">✅ Boxly: Timer + tasks + AI blocking</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="usp-banner">
+                <div class="usp-content">
+                    <h3>🎯 The Only Tool That Does It All</h3>
+                    <p>AI-powered blocking + Visual tasks + Pomodoro + Canvas sync + Real-time multi-device sync</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
@@ -168,12 +225,13 @@
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>AI-Powered Blocking</h3>
-                    <p>Uses Llama3 7B model to intelligently block distracting websites based on your current task context</p>
+                    <h3>Llama3 AI Blocking</h3>
+                    <p><strong>Context-aware, not just blacklists.</strong> Llama3 7B analyzes if websites match your task. YouTube allowed for "research documentaries" but blocked for "write essay".</p>
                     <div class="feature-demo ai-demo">
                         <div class="demo-browser">
-                            <div class="demo-url">youtube.com/watch?v=distracti...</div>
-                            <div class="demo-status blocked">❌ Blocked by AI</div>
+                            <div class="demo-task-context">📝 Active task: "Write History Essay"</div>
+                            <div class="demo-url">youtube.com/watch?v=cat_videos</div>
+                            <div class="demo-status blocked">🚫 Blocked - Not relevant to task</div>
                         </div>
                     </div>
                 </div>
@@ -182,13 +240,13 @@
                     <div class="feature-icon">
                         <i class="fas fa-sticky-note"></i>
                     </div>
-                    <h3>Smart Task Organization</h3>
-                    <p>Organize tasks with colorful sticky notes that you can drag, edit, and manage with intuitive controls</p>
+                    <h3>Infinite Visual Canvas</h3>
+                    <p>Drag-and-drop sticky notes on an infinite artboard (like Miro for tasks). Zoom, pan, resize, color-code. Multiple artboards for "School", "Work", "Personal". Syncs across devices in real-time.</p>
                     <div class="feature-demo">
                         <div class="demo-board">
-                            <div class="demo-note demo-note-blue">Math Homework</div>
-                            <div class="demo-note demo-note-pink">Call Mom</div>
-                            <div class="demo-note demo-note-yellow">Buy Groceries</div>
+                            <div class="demo-note demo-note-blue">📚 Math Homework</div>
+                            <div class="demo-note demo-note-pink">📞 Call Mom</div>
+                            <div class="demo-note demo-note-yellow">🛒 Buy Groceries</div>
                         </div>
                     </div>
                 </div>
@@ -216,12 +274,12 @@
                     <div class="feature-icon">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Break Management</h3>
-                    <p>Automatic break reminders and forced break periods to maintain healthy work patterns</p>
+                    <h3>Smart Pomodoro Breaks</h3>
+                    <p><strong>Auto-calculated based on task duration.</strong> Tasks ≤60min get 5-min breaks every 30min. Tasks >60min get 10-min breaks every 60min. Tracks actual vs estimated time.</p>
                     <div class="feature-demo">
                         <div class="demo-break">
-                            <div class="demo-timer">25:00</div>
-                            <div class="demo-break-text">Take a 5 minute break!</div>
+                            <div class="demo-timer">45:00</div>
+                            <div class="demo-break-text">💪 Take a 5 minute break! You've earned it.</div>
                         </div>
                     </div>
                 </div>
@@ -230,17 +288,17 @@
                     <div class="feature-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Class Integration</h3>
-                    <p>Students can join classes and teachers can assign tasks directly through the extension</p>
+                    <h3>Canvas LMS Sync</h3>
+                    <p>Automatically imports assignments from Canvas (used by 30M+ students). Syncs every 6 hours, shows assignments due within 7 days, all with encrypted security.</p>
                     <div class="feature-demo">
                         <div class="demo-class">
                             <div class="demo-class-item">
-                                <span class="class-tag">CS101</span>
-                                <span>Assignment Due</span>
+                                <span class="class-tag canvas-badge">Canvas</span>
+                                <span>History Essay - Due Friday</span>
                             </div>
                             <div class="demo-class-item">
-                                <span class="class-tag">MATH202</span>
-                                <span>Quiz Tomorrow</span>
+                                <span class="class-tag canvas-badge">Canvas</span>
+                                <span>Math Problem Set - Due Monday</span>
                             </div>
                         </div>
                     </div>
@@ -250,17 +308,21 @@
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Productivity Tracking</h3>
-                    <p>Track completed tasks and monitor your productivity patterns over time</p>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Daily & all-time stats: tasks completed, focus time, break compliance, distraction attempts blocked. See actual vs estimated time to improve planning. Gamification motivates productivity.</p>
                     <div class="feature-demo">
                         <div class="demo-stats">
                             <div class="stat-item">
                                 <span class="stat-number">12</span>
-                                <span class="stat-label">Tasks Done</span>
+                                <span class="stat-label">Tasks Today</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">3h</span>
                                 <span class="stat-label">Focus Time</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">47</span>
+                                <span class="stat-label">Distractions Blocked</span>
                             </div>
                         </div>
                     </div>
@@ -387,28 +449,30 @@
     <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
-            <h2 class="section-title">Ready to Boost Your Productivity?</h2>
-            <p class="download-subtitle">Download Boxly now and start your journey to focused, productive work sessions.</p>
+            <h2 class="section-title">Ready to Reclaim Your Focus?</h2>
+            <p class="download-subtitle">Join students and professionals using Boxly to stay focused and get more done. Free and open-source.</p>
             
             <div class="download-options">
                 <div class="download-card primary">
-                    <h3>Download from GitHub</h3>
-                    <p>Get the latest version directly from our repository</p>
+                    <h3>📦 Download ZIP</h3>
+                    <p>Get the latest version and follow our 5-step installation guide above</p>
                     <a href="https://github.com/VarunHari12/Boxly/archive/refs/heads/main.zip" class="btn btn-download" id="github-download">
                         <i class="fab fa-github"></i>
-                        Download ZIP
+                        Download from GitHub
                     </a>
+                    <p class="download-note">⚡ Chrome extension • Not on Web Store yet • Manual install only</p>
                 </div>
-                
+
                 <div class="download-card">
-                    <h3>Clone Repository</h3>
-                    <p>For developers who want to contribute or modify</p>
+                    <h3>🔧 For Developers</h3>
+                    <p>Clone, modify, contribute. Pull requests welcome!</p>
                     <div class="code-snippet">
-                        <code>git clone https://github.com/your-repo/boxly.git</code>
-                        <button class="copy-btn" onclick="copyToClipboard('git clone https://github.com/your-repo/boxly.git')">
+                        <code>git clone https://github.com/VarunHari12/Boxly.git</code>
+                        <button class="copy-btn" onclick="copyToClipboard('git clone https://github.com/VarunHari12/Boxly.git')">
                             <i class="fas fa-copy"></i>
                         </button>
                     </div>
+                    <p class="download-note">⭐ Star us on GitHub if you find Boxly useful!</p>
                 </div>
             </div>
             
