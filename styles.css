@@ -72,9 +72,9 @@ html {
     text-decoration: none;
 }
 
-.nav-logo i {
-    margin-right: 10px;
-    font-size: 1.8rem;
+.nav-logo img {
+    height: 100px;
+    width: auto;
 }
 
 .nav-menu {
@@ -1353,9 +1353,9 @@ html {
     margin-bottom: 20px;
 }
 
-.footer-logo i {
-    margin-right: 10px;
-    font-size: 1.8rem;
+.footer-logo img {
+    height: 120px;
+    width: auto;
 }
 
 .footer-section p {
@@ -1432,6 +1432,17 @@ html {
     padding-top: 20px;
     text-align: center;
     color: #ccc;
+}
+
+.footer-bottom a {
+    color: #6495ED;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #add8e6;
+    text-decoration: underline;
 }
 
 /* Animations */
