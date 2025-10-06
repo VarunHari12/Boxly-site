@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Boxly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .privacy-container {
+            max-width: 900px;
+            margin: 100px auto 60px;
+            padding: 0 20px;
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .privacy-header .last-updated {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .privacy-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .privacy-content h2 {
+            color: #6495ED;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .privacy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .privacy-content h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .privacy-content p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .privacy-content ul, .privacy-content ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .privacy-content li {
+            margin-bottom: 10px;
+        }
+
+        .privacy-content strong {
+            color: #333;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(100, 149, 237, 0.1), rgba(173, 216, 230, 0.1));
+            border-left: 4px solid #6495ED;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-section {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+
+        .contact-section h3 {
+            color: #6495ED;
+            margin-top: 0;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #6495ED;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            gap: 12px;
+            color: #4169E1;
+        }
+
+        @media (max-width: 768px) {
+            .privacy-container {
+                margin-top: 80px;
+            }
+
+            .privacy-header h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-content {
+                padding: 25px;
+            }
+
+            .privacy-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cube"></i>
+                <span>Boxly</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#download" class="nav-link download-btn">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="privacy-container">
+        <div class="privacy-header">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: January 2025</p>
+        </div>
+
+        <div class="privacy-content">
+            <a href="index.html" class="back-home">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+
+            <div class="highlight-box">
+                <p><strong>Quick Summary:</strong> Boxly collects your task data, Canvas LMS credentials (encrypted), and browsing URLs when focus mode is active. We use this data solely to provide intelligent website blocking and Canvas integration. We do not sell or share your personal data with third parties except for AI processing necessary for the blocking feature.</p>
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to Boxly. We are committed to protecting your privacy and being transparent about how we collect, use, and protect your information. This Privacy Policy explains what data we collect, why we collect it, and your rights regarding your data.</p>
+            <p>By using Boxly, you agree to the collection and use of information in accordance with this policy.</p>
+
+            <h2>2. Information We Collect</h2>
+
+            <h3>2.1 Account Information</h3>
+            <ul>
+                <li><strong>Username:</strong> Used to identify your account and personalize your experience</li>
+                <li><strong>Password:</strong> Encrypted using industry-standard Argon2id hashing (we cannot access your actual password)</li>
+                <li><strong>Session tokens:</strong> Securely generated tokens to keep you logged in across devices</li>
+            </ul>
+
+            <h3>2.2 Task Data</h3>
+            <p>We store all information you enter about your tasks, including:</p>
+            <ul>
+                <li>Task titles and descriptions</li>
+                <li>Due dates and estimated completion times</li>
+                <li>Task priorities and categories</li>
+                <li>Task positions on your visual workspace (artboard coordinates)</li>
+                <li>Pomodoro session data (start/stop times, actual vs estimated duration)</li>
+                <li>Task completion status and timestamps</li>
+            </ul>
+
+            <h3>2.3 Canvas LMS Integration (Optional)</h3>
+            <p>If you choose to connect your Canvas LMS account:</p>
+            <ul>
+                <li><strong>Canvas URL:</strong> Your institution's Canvas domain</li>
+                <li><strong>Canvas API Token:</strong> Encrypted using Fernet symmetric encryption before storage. We never store your token in plain text and cannot decrypt it for purposes other than syncing your assignments.</li>
+                <li><strong>Assignment Data:</strong> Course names, assignment titles, due dates, and descriptions pulled from Canvas (only assignments due within 7 days)</li>
+                <li><strong>Course Information:</strong> Course IDs and names you've selected for sync</li>
+            </ul>
+
+            <h3>2.4 Browsing Data (Focus Mode Only)</h3>
+            <p>When you activate focus mode by starting a task:</p>
+            <ul>
+                <li><strong>Website URLs:</strong> The addresses of websites you visit while a task is active</li>
+                <li><strong>Page Context:</strong> Page titles, video names, or article headlines to improve AI accuracy</li>
+                <li><strong>Blocking Decisions:</strong> Whether each website was allowed or blocked</li>
+                <li><strong>Timestamps:</strong> When you visited each site</li>
+            </ul>
+            <p><strong>Important:</strong> We only collect browsing data while you have an active task. When no task is running, we do not monitor your browsing.</p>
+
+            <h3>2.5 Usage Analytics</h3>
+            <ul>
+                <li>Number of tasks created and completed</li>
+                <li>Total focus time and break time</li>
+                <li>Feature usage patterns (which features you use most)</li>
+                <li>Error logs and crash reports (to improve stability)</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+
+            <h3>3.1 Core Functionality</h3>
+            <ul>
+                <li><strong>Task Management:</strong> Store and sync your tasks across all your devices</li>
+                <li><strong>AI-Powered Blocking:</strong> Send website URLs and task context to our AI service to determine relevance</li>
+                <li><strong>Canvas Integration:</strong> Fetch your assignments from Canvas LMS and display them in Boxly</li>
+                <li><strong>Pomodoro Timer:</strong> Track your focus sessions and calculate break intervals</li>
+                <li><strong>Multi-Device Sync:</strong> Keep your data synchronized in real-time via WebSocket connections</li>
+            </ul>
+
+            <h3>3.2 Service Improvement</h3>
+            <ul>
+                <li>Analyze usage patterns to improve features</li>
+                <li>Identify and fix bugs</li>
+                <li>Understand which features are most valuable</li>
+                <li>Improve AI blocking accuracy</li>
+            </ul>
+
+            <h3>3.3 Communication</h3>
+            <ul>
+                <li>Send important service updates (major bugs, security issues)</li>
+                <li>Notify you of new features (only if you opt-in)</li>
+            </ul>
+            <p><strong>We will never send marketing emails without your explicit consent.</strong></p>
+
+            <h2>4. Third-Party Services</h2>
+
+            <h3>4.1 AI Processing (OpenRouter/OpenAI)</h3>
+            <p>When you use the AI-powered blocking feature:</p>
+            <ul>
+                <li>Website URLs and page context are sent to OpenRouter's API</li>
+                <li>OpenRouter processes this data using the Llama3 AI model</li>
+                <li>The AI returns a decision (allow or block) based on task relevance</li>
+                <li>OpenRouter may temporarily log requests for their own service monitoring</li>
+            </ul>
+            <p><strong>Data sent:</strong> Website URL, page title/context, task description<br>
+            <strong>Data NOT sent:</strong> Your username, password, other tasks, or personal information</p>
+
+            <h3>4.2 Canvas LMS</h3>
+            <p>When you connect Canvas:</p>
+            <ul>
+                <li>We use your encrypted API token to fetch assignments directly from Canvas</li>
+                <li>Canvas may log these API requests according to their own privacy policy</li>
+                <li>We only access data you explicitly authorize (courses and assignments)</li>
+            </ul>
+
+            <h3>4.3 No Other Third Parties</h3>
+            <p>We do not:</p>
+            <ul>
+                <li>❌ Share your data with advertisers</li>
+                <li>❌ Sell your data to data brokers</li>
+                <li>❌ Use analytics trackers (Google Analytics, etc.)</li>
+                <li>❌ Share data with social media platforms</li>
+            </ul>
+
+            <h2>5. Data Storage and Security</h2>
+
+            <h3>5.1 Where We Store Data</h3>
+            <ul>
+                <li><strong>Backend Server:</strong> PostgreSQL database hosted on our secure servers</li>
+                <li><strong>Browser Extension:</strong> Minimal caching in Chrome's local storage for offline access</li>
+                <li><strong>Location:</strong> United States (with plans for regional data centers)</li>
+            </ul>
+
+            <h3>5.2 Security Measures</h3>
+            <ul>
+                <li><strong>Passwords:</strong> Hashed with Argon2id (industry-leading algorithm)</li>
+                <li><strong>Canvas Tokens:</strong> Encrypted with Fernet symmetric encryption (256-bit keys)</li>
+                <li><strong>Data in Transit:</strong> All communication encrypted with HTTPS/TLS</li>
+                <li><strong>Database Access:</strong> Restricted to authorized backend services only</li>
+                <li><strong>Session Tokens:</strong> Cryptographically secure random tokens with 30-day expiration</li>
+                <li><strong>Rate Limiting:</strong> Protection against brute-force attacks and abuse</li>
+            </ul>
+
+            <h3>5.3 Data Retention</h3>
+            <ul>
+                <li><strong>Active Accounts:</strong> Data retained indefinitely while your account is active</li>
+                <li><strong>Deleted Accounts:</strong> All personal data permanently deleted within 30 days</li>
+                <li><strong>Completed Tasks:</strong> Kept for analytics unless you delete them</li>
+                <li><strong>Browsing History:</strong> Retained for 90 days, then automatically purged</li>
+                <li><strong>Error Logs:</strong> Retained for 30 days for debugging purposes</li>
+            </ul>
+
+            <h2>6. Your Rights and Choices</h2>
+
+            <h3>6.1 Access Your Data</h3>
+            <p>You can view all your data at any time within the extension:</p>
+            <ul>
+                <li>Tasks: Visible in your workspace</li>
+                <li>Settings: Available in Settings panel</li>
+                <li>Canvas Configuration: Visible in Canvas settings (token is masked for security)</li>
+            </ul>
+
+            <h3>6.2 Export Your Data</h3>
+            <p>Request a complete export of your data in JSON format by contacting us at privacy@boxly.tennisbowling.com. We'll provide your data within 30 days.</p>
+
+            <h3>6.3 Delete Your Data</h3>
+            <p>You have several deletion options:</p>
+            <ul>
+                <li><strong>Individual Tasks:</strong> Delete any task by clicking the trash icon</li>
+                <li><strong>Canvas Connection:</strong> Disconnect Canvas in Settings → Canvas Integration → Delete Config</li>
+                <li><strong>All Tasks:</strong> Settings → Data Management → Clear All Tasks</li>
+                <li><strong>Entire Account:</strong> Settings → Account → Delete Account (irreversible)</li>
+            </ul>
+
+            <h3>6.4 Opt-Out of Features</h3>
+            <ul>
+                <li><strong>AI Blocking:</strong> Disable by not starting tasks (blocking only active when task is running)</li>
+                <li><strong>Canvas Sync:</strong> Disconnect Canvas in settings or don't connect it initially</li>
+                <li><strong>Analytics:</strong> Future version will include opt-out toggle</li>
+            </ul>
+
+            <h3>6.5 Download Extension Updates</h3>
+            <p>You control when to update the extension. Updates are manual (not automatic) since we're not on the Chrome Web Store yet.</p>
+
+            <h2>7. Children's Privacy</h2>
+            <p>Boxly is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you are a parent and believe your child has provided us with personal information, please contact us and we will delete it immediately.</p>
+            <p>For users aged 13-18, we recommend parental guidance when using the extension.</p>
+
+            <h2>8. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. When we make significant changes, we will:</p>
+            <ul>
+                <li>Update the "Last Updated" date at the top of this page</li>
+                <li>Notify you via in-app message when you next open Boxly</li>
+                <li>For major changes affecting your rights, we'll request your consent</li>
+            </ul>
+            <p>Continued use of Boxly after policy updates constitutes acceptance of the new terms.</p>
+
+            <h2>9. International Users</h2>
+            <p>Boxly is based in the United States. If you are accessing Boxly from outside the U.S., please be aware that your information may be transferred to, stored, and processed in the United States where our servers are located.</p>
+            <p>By using Boxly, you consent to the transfer of your information to the United States and processing in accordance with this Privacy Policy.</p>
+
+            <h2>10. California Privacy Rights (CCPA)</h2>
+            <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+            <ul>
+                <li><strong>Right to Know:</strong> Request details about the personal information we collect</li>
+                <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+                <li><strong>Right to Opt-Out:</strong> Opt-out of the sale of personal information (note: we do not sell personal information)</li>
+                <li><strong>Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
+            </ul>
+            <p>To exercise these rights, email us at privacy@boxly.tennisbowling.com with "CCPA Request" in the subject line.</p>
+
+            <h2>11. European Privacy Rights (GDPR)</h2>
+            <p>If you are in the European Economic Area (EEA), you have rights under the General Data Protection Regulation (GDPR):</p>
+            <ul>
+                <li><strong>Right to Access:</strong> Obtain confirmation of whether we process your data and access to it</li>
+                <li><strong>Right to Rectification:</strong> Correct inaccurate personal data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion of your personal data</li>
+                <li><strong>Right to Restrict Processing:</strong> Request limitation of how we use your data</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a machine-readable format</li>
+                <li><strong>Right to Object:</strong> Object to processing of your personal data</li>
+                <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time (doesn't affect lawfulness of prior processing)</li>
+            </ul>
+            <p>To exercise these rights, email us at privacy@boxly.tennisbowling.com. We will respond within 30 days.</p>
+
+            <h3>Legal Basis for Processing (GDPR)</h3>
+            <p>We process your data based on:</p>
+            <ul>
+                <li><strong>Consent:</strong> You explicitly agree to data collection (Canvas integration, AI blocking)</li>
+                <li><strong>Contract Performance:</strong> Processing necessary to provide Boxly's core services</li>
+                <li><strong>Legitimate Interests:</strong> Service improvement, security, and fraud prevention</li>
+            </ul>
+
+            <h2>12. Data Breach Notification</h2>
+            <p>In the unlikely event of a data breach that affects your personal information, we will:</p>
+            <ul>
+                <li>Notify you via email within 72 hours of discovering the breach</li>
+                <li>Describe the nature of the breach and what data was affected</li>
+                <li>Explain the steps we're taking to mitigate harm</li>
+                <li>Provide guidance on protecting your account</li>
+                <li>Notify relevant authorities as required by law</li>
+            </ul>
+
+            <h2>13. Third-Party Links</h2>
+            <p>Boxly may contain links to third-party websites (e.g., Canvas LMS, documentation). We are not responsible for the privacy practices of these external sites. We encourage you to read their privacy policies before providing any personal information.</p>
+
+            <div class="contact-section">
+                <h3>14. Contact Us</h3>
+                <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> privacy@boxly.tennisbowling.com</li>
+                    <li><strong>Response Time:</strong> Within 7 business days</li>
+                    <li><strong>Data Protection Officer:</strong> Available upon request</li>
+                </ul>
+                <p>We take your privacy seriously and will respond to all legitimate requests promptly.</p>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 40px;">
+                <p><strong>Thank you for trusting Boxly with your data.</strong> We are committed to protecting your privacy while helping you stay focused and productive. If you have any concerns, please don't hesitate to reach out.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-brand">
+                    <i class="fas fa-cube"></i>
+                    <span>Boxly</span>
+                </div>
+                <p class="footer-description">AI-powered productivity extension for staying focused and getting things done.</p>
+                <div class="footer-stats">
+                    <div class="footer-stat">
+                        <i class="fas fa-brain"></i>
+                        <span>Powered by Llama3</span>
+                    </div>
+                    <div class="footer-stat">
+                        <i class="fas fa-bolt"></i>
+                        <span>Lightweight</span>
+                    </div>
+                    <div class="footer-stat">
+                        <i class="fas fa-lock"></i>
+                        <span>Privacy-Focused</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#installation">Installation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                </div>
+                <p class="footer-version">Version 1.0.1</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Boxly. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
