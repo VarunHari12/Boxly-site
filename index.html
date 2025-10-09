@@ -18,7 +18,6 @@
             <ul class="nav-menu">
                 <li><a href="#features" class="nav-link">Features</a></li>
                 <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-                <li><a href="#installation" class="nav-link">Install</a></li>
                 <li><a href="#download" class="nav-link download-btn">Download</a></li>
             </ul>
         </div>
@@ -33,11 +32,12 @@
                     <span class="hero-title-main-2">Start Getting Things Done.</span>
                     <span class="hero-title-brand">Boxly</span>
                 </h1>
-                <p class="hero-subtitle">The only productivity tool that combines <strong>Llama3 AI-powered</strong> distraction blocking with visual task management and Canvas LMS integration—all synced across your devices in real-time.</p>
+                <p class="hero-subtitle"><strong>AI blocks distractions.</strong> Visual tasks keep you organized. <strong>Everything syncs.</strong></p>
+                <p class="hero-subtext">Stop switching between apps. Boxly combines smart website blocking, drag-and-drop tasks, and Canvas sync in one extension.</p>
                 <div class="hero-buttons">
-                    <a href="#download" class="btn btn-primary">
-                        <i class="fas fa-download"></i>
-                        Download Free
+                    <a href="https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-chrome"></i>
+                        Add to Chrome - Free!
                     </a>
                     <a href="#features" class="btn btn-secondary">
                         <i class="fas fa-play"></i>
@@ -163,7 +163,7 @@
     <section class="why-boxly">
         <div class="container">
             <h2 class="section-title">Why Boxly Beats the Rest</h2>
-            <p class="why-subtitle">Most tools do one thing. Boxly does everything.</p>
+            <p class="why-subtitle">Other tools only solve half the problem. Boxly solves it completely.</p>
 
             <div class="comparison-grid">
                 <div class="comparison-card">
@@ -174,7 +174,6 @@
                     <div class="comparison-content">
                         <div class="con-item">❌ Dumb blacklists (block everything or nothing)</div>
                         <div class="con-item">❌ No task management</div>
-                        <div class="con-item">❌ Can't understand context</div>
                         <div class="pro-item">✅ Boxly: AI decides based on your active task</div>
                     </div>
                 </div>
@@ -186,7 +185,6 @@
                     </div>
                     <div class="comparison-content">
                         <div class="con-item">❌ No distraction blocking</div>
-                        <div class="con-item">❌ No AI context awareness</div>
                         <div class="con-item">❌ You still get distracted while working</div>
                         <div class="pro-item">✅ Boxly: Tasks + blocking in one tool</div>
                     </div>
@@ -199,17 +197,155 @@
                     </div>
                     <div class="comparison-content">
                         <div class="con-item">❌ Only timers, no blocking</div>
-                        <div class="con-item">❌ No task organization</div>
                         <div class="con-item">❌ Doesn't prevent you from opening Twitter</div>
                         <div class="pro-item">✅ Boxly: Tasks + AI blocking + Canvas sync</div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="usp-banner">
-                <div class="usp-content">
-                    <h3>🎯 The Only Tool That Does It All</h3>
-                    <p>AI-powered blocking + Visual tasks + Canvas sync + Real-time multi-device sync</p>
+    <!-- AI Blocking Showcase -->
+    <section class="ai-blocking-showcase">
+        <div class="container">
+            <h2 class="section-title">Context-Aware AI Blocking</h2>
+            <p class="showcase-subtitle">Same task. Same website. Different content. Different result. That's intelligence.</p>
+
+            <div class="same-site-badge">
+                <i class="fab fa-youtube"></i>
+                <span>Same Website: YouTube</span>
+            </div>
+
+            <div class="blocking-comparison">
+                <!-- Allowed Scenario -->
+                <div class="blocking-scenario allowed">
+                    <div class="flow-step step-task">
+                        <div class="step-label">Your Active Task</div>
+                        <div class="task-badge active">📚 Research Ancient Rome</div>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>You visit</span>
+                    </div>
+
+                    <div class="flow-step step-website">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">
+                                    <i class="fas fa-lock"></i>
+                                    youtube.com
+                                </div>
+                            </div>
+                            <div class="youtube-search-bar">
+                                <i class="fas fa-search"></i>
+                                <span>ancient rome history documentary</span>
+                            </div>
+                            <div class="browser-content">
+                                <div class="youtube-video-card educational">
+                                    <div class="video-thumbnail">
+                                        <i class="fas fa-landmark"></i>
+                                        <span class="video-duration">52:18</span>
+                                    </div>
+                                    <div class="video-info">
+                                        <h4>Ancient Rome: Complete History Documentary</h4>
+                                        <p class="video-meta">Educational Channel • 2M views</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                        <div class="ai-thinking">
+                            <i class="fas fa-brain"></i>
+                            <span>AI analyzes context...</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-step step-result">
+                        <div class="scenario-result allowed-result">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>✅ ALLOWED</strong>
+                                <p>This helps with your research!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VS Divider -->
+                <div class="vs-divider">
+                    <span>VS</span>
+                </div>
+
+                <!-- Blocked Scenario -->
+                <div class="blocking-scenario blocked">
+                    <div class="flow-step step-task">
+                        <div class="step-label">Your Active Task</div>
+                        <div class="task-badge active">📚 Research Ancient Rome</div>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>You visit</span>
+                    </div>
+
+                    <div class="flow-step step-website">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="browser-url">
+                                    <i class="fas fa-lock"></i>
+                                    youtube.com
+                                </div>
+                            </div>
+                            <div class="youtube-search-bar">
+                                <i class="fas fa-search"></i>
+                                <span>funny cat videos compilation</span>
+                            </div>
+                            <div class="browser-content blocked-overlay">
+                                <div class="block-message">
+                                    <i class="fas fa-ban"></i>
+                                    <h3>Blocked by Boxly</h3>
+                                    <p>Not related to your research!</p>
+                                    <p class="block-hint">Back to work 💪</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flow-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                        <div class="ai-thinking">
+                            <i class="fas fa-brain"></i>
+                            <span>AI analyzes context...</span>
+                        </div>
+                    </div>
+
+                    <div class="flow-step step-result">
+                        <div class="scenario-result blocked-result">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <strong>🚫 BLOCKED</strong>
+                                <p>This distracts from your research!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-explanation">
+                <div class="explanation-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Why This Matters</h3>
+                    <p>Same task. Same website. Different content. Boxly's AI doesn't just block domains—it <strong>understands context</strong>. YouTube documentaries help your research, cat videos don't. The AI knows the difference.</p>
                 </div>
             </div>
         </div>
@@ -224,15 +360,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Llama3 AI Blocking</h3>
-                    <p><strong>Context-aware, not just blacklists.</strong> Llama3 7B analyzes if websites match your task. YouTube allowed for "research documentaries" but blocked for "write essay".</p>
-                    <div class="feature-demo ai-demo">
-                        <div class="demo-browser">
-                            <div class="demo-task-context">📝 Active task: "Write History Essay"</div>
-                            <div class="demo-url">youtube.com/watch?v=cat_videos</div>
-                            <div class="demo-status blocked">🚫 Blocked - Not relevant to task</div>
-                        </div>
-                    </div>
+                    <h3>AI-Powered Blocking</h3>
+                    <p><strong>Context-aware, not just blacklists.</strong> Our AI analyzes if websites match your task. The same website can be allowed or blocked depending on what you're working on - that's real intelligence.</p>
                 </div>
                 
                 <div class="feature-card">
@@ -353,7 +482,7 @@
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3>Stay Focused</h3>
-                        <p>Boxly's Llama3 AI analyzes websites you visit and blocks distracting content while allowing relevant resources.</p>
+                        <p>Boxly's AI analyzes websites you visit and blocks distracting content while allowing relevant resources.</p>
                     </div>
                 </div>
                 <div class="step">
@@ -367,121 +496,35 @@
         </div>
     </section>
 
-    <!-- Installation Guide -->
-    <section id="installation" class="installation">
-        <div class="container">
-            <h2 class="section-title">Easy Installation</h2>
-            <p class="installation-subtitle">Boxly isn't yet on the Chrome Web Store, but you can easily install it with these steps:</p>
-            
-            <div class="installation-steps">
-                <div class="install-step">
-                    <div class="install-step-content">
-                        <div class="install-step-header">
-                            <span class="install-step-number">1</span>
-                            <h3>Download Boxly</h3>
-                        </div>
-                        <p>Download or clone the Boxly project and unzip it to a convenient location on your computer.</p>
-                    </div>
-                    <div class="install-visual">
-                        <i class="fas fa-download"></i>
-                    </div>
-                </div>
-                
-                <div class="install-step">
-                    <div class="install-step-content">
-                        <div class="install-step-header">
-                            <span class="install-step-number">2</span>
-                            <h3>Open Chrome Extensions</h3>
-                        </div>
-                        <p>Launch Chrome and click the Extensions button in the top-right corner, then select "Manage Extensions".</p>
-                    </div>
-                    <div class="install-visual">
-                        <i class="fas fa-puzzle-piece"></i>
-                    </div>
-                </div>
-                
-                <div class="install-step">
-                    <div class="install-step-content">
-                        <div class="install-step-header">
-                            <span class="install-step-number">3</span>
-                            <h3>Enable Developer Mode</h3>
-                        </div>
-                        <p>Toggle "Developer Mode" on in the top-right corner of the Extensions page.</p>
-                    </div>
-                    <div class="install-visual">
-                        <div class="toggle-demo">
-                            <span>Developer mode</span>
-                            <div class="toggle active"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="install-step">
-                    <div class="install-step-content">
-                        <div class="install-step-header">
-                            <span class="install-step-number">4</span>
-                            <h3>Load Unpacked Extension</h3>
-                        </div>
-                        <p>Click "Load Unpacked" and navigate to select the Boxly project folder.</p>
-                    </div>
-                    <div class="install-visual">
-                        <i class="fas fa-folder-open"></i>
-                    </div>
-                </div>
-                
-                <div class="install-step">
-                    <div class="install-step-content">
-                        <div class="install-step-header">
-                            <span class="install-step-number">5</span>
-                            <h3>Start Using Boxly!</h3>
-                        </div>
-                        <p>Enable Boxly and click the extension icon to open your productivity dashboard.</p>
-                    </div>
-                    <div class="install-visual success">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
             <h2 class="section-title">Ready to Reclaim Your Focus?</h2>
-            <p class="download-subtitle">Join students and professionals using Boxly to stay focused and get more done. Free and open-source.</p>
-            
-            <div class="download-options">
-                <div class="download-card primary">
-                    <h3>📦 Download ZIP</h3>
-                    <p>Get the latest version and follow our 5-step installation guide above</p>
-                    <a href="https://github.com/VarunHari12/Boxly/archive/refs/heads/main.zip" class="btn btn-download" id="github-download">
-                        <i class="fab fa-github"></i>
-                        Download from GitHub
-                    </a>
-                    <p class="download-note">⚡ Chrome extension • Not on Web Store yet • Manual install only</p>
-                </div>
+            <p class="download-subtitle">Join thousands of students and professionals staying focused with Boxly.</p>
 
-                <div class="download-card">
-                    <h3>🔧 For Developers</h3>
-                    <p>Clone, modify, contribute. Pull requests welcome!</p>
-                    <div class="code-snippet">
-                        <code>git clone https://github.com/VarunHari12/Boxly.git</code>
-                        <button class="copy-btn" onclick="copyToClipboard('git clone https://github.com/VarunHari12/Boxly.git')">
-                            <i class="fas fa-copy"></i>
-                        </button>
+            <div class="download-hero">
+                <a href="https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog" target="_blank" class="btn btn-chrome-store-large">
+                    <i class="fab fa-chrome"></i>
+                    <div class="btn-content">
+                        <span class="btn-main">Add to Chrome - Free!</span>
+                        <span class="btn-sub">One-click install • Automatic updates • Secure</span>
                     </div>
-                    <p class="download-note">⭐ Star us on GitHub if you find Boxly useful!</p>
-                </div>
+                </a>
             </div>
-            
-            <div class="requirements">
-                <h4>System Requirements</h4>
-                <ul>
-                    <li><i class="fab fa-chrome"></i> Google Chrome Browser</li>
-                    <li><i class="fas fa-cogs"></i> Developer Mode Access</li>
-                    <li><i class="fas fa-memory"></i> Minimal RAM Usage (~50MB)</li>
-                </ul>
+
+            <div class="download-features">
+                <div class="download-feature">
+                    <i class="fas fa-bolt"></i>
+                    <span>Instant Setup</span>
+                </div>
+                <div class="download-feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Secure</span>
+                </div>
+                <div class="download-feature">
+                    <i class="fas fa-sync"></i>
+                    <span>Auto Updates</span>
+                </div>
             </div>
         </div>
     </section>
@@ -496,7 +539,7 @@
                     </div>
                     <p>AI-powered productivity extension for focused work sessions</p>
                     <div class="footer-stats">
-                        <span class="stat">🧠 Powered by Llama3 7B</span>
+                        <span class="stat">🧠 AI-Powered Intelligence</span>
                         <span class="stat">⚡ Lightweight & Fast</span>
                         <span class="stat">🔒 Privacy-Focused</span>
                     </div>
@@ -516,11 +559,9 @@
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#installation">Installation Guide</a></li>
                         <li><a href="#how-it-works">How It Works</a></li>
                         <li><a href="#download">Download</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#">Documentation</a></li>
                         <li><a href="mailto:boxlydev@gmail.com">Contact Support</a></li>
                     </ul>
                 </div>
@@ -529,7 +570,6 @@
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="https://github.com/VarunHari12/Boxly" target="_blank">GitHub</a></li>
                         <li><a href="mailto:boxlydev@gmail.com">Privacy Concerns</a></li>
                     </ul>
                     <p class="version">Version 1.0.1</p>
