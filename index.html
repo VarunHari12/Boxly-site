@@ -14,6 +14,28 @@
       gtag('config', 'AW-17639333146');
     </script>
 
+    <!-- Event snippet for Purchase conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17639333146/wMBaCKSJo6obEJq6i9tB',
+          'value': 1.0,
+          'currency': 'USD',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="d2daef11-45aa-4463-8b3d-5e1e9425a7d2"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
@@ -45,7 +67,7 @@
                 <p class="hero-subtitle"><strong>AI blocks distractions.</strong> Visual tasks keep you organized. <strong>Everything syncs.</strong></p>
                 <p class="hero-subtext">Stop switching between apps. Boxly combines smart website blocking, drag-and-drop tasks, and Canvas sync in one extension.</p>
                 <div class="hero-buttons">
-                    <a href="https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog" target="_blank" class="btn btn-primary" onclick="gtag('event', 'conversion', {'send_to': 'AW-17639333146/CONVERSION_LABEL'});">
+                    <a href="https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog" class="btn btn-primary" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog');">
                         <i class="fab fa-chrome"></i>
                         Add to Chrome - Free!
                     </a>
@@ -515,7 +537,7 @@
             <p class="download-subtitle">Join thousands of students and professionals staying focused with Boxly.</p>
 
             <div class="download-hero">
-                <a href="https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog" target="_blank" class="btn btn-chrome-store-large" onclick="gtag('event', 'conversion', {'send_to': 'AW-17639333146/CONVERSION_LABEL'});">
+                <a href="https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog" class="btn btn-chrome-store-large" onclick="return gtag_report_conversion('https://chromewebstore.google.com/detail/gkidgdgpjpilelkjaojaagdloncabdog');">
                     <i class="fab fa-chrome"></i>
                     <div class="btn-content">
                         <span class="btn-main">Add to Chrome - Free!</span>
